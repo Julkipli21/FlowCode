@@ -1,0 +1,7 @@
+<!-- res/drawable/process_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#2A5770" /> <!-- Set the background color -->
+    <stroke
+        android:color="#3B4A95"
+        android:width="2dp" /> <!-- Add stroke with color and width -->
+</shape>

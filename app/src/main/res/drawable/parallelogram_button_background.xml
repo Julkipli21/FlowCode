@@ -1,0 +1,15 @@
+<!-- res/drawable/parallelogram_button_background.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="55dp"
+    android:height="55dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path
+        android:fillColor="#5C8551"
+        android:strokeColor="#26461D"
+        android:strokeWidth="2"
+        android:pathData="M10,0L100,0L90,100L0,100Z" />
+
+</vector>
+

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ConvertedFlow"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/flowchartCont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5E5C5C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/mainContent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0"
+        tools:context=".FlowCodeConverter"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!--            &lt;!&ndash; Buttons in the sidebar &ndash;&gt;-->
+        <Button
+            android:id="@+id/start"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/oval_button_background"
+            android:text="start"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:clickable="false"/>
+
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/parallelogram_button_background"
+            android:text="input"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/output"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/parallelogram_button_background"
+            android:text="output"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/process"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="process"
+            android:background="@drawable/process_button_background"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/loop"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="loop"
+            android:background="@drawable/iterate_button_background"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/decision"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/diamond_button_background"
+            android:text="decision"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yes_button_background"
+            android:text="yes"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/no_button_background"
+            android:text="no"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/oval_button_background"
+            android:text="end"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#383838"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/flowchartCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/vision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Please wait...."
+            android:longClickable="true"
+            android:onClick="copyText"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<!-- res/drawable/diamond_button_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color for the diamond shape -->
+    <item
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp">
+
+        <rotate
+
+            android:fromDegrees="45">
+            <shape>
+                <stroke
+                    android:width="4dp"
+                    android:color="#343464" />
+                <solid android:color="#47476B" />
+            </shape>
+        </rotate>
+
+    </item>
+
+</layer-list>

@@ -1,0 +1,9 @@
+<!-- res/drawable/oval_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#747075" /> <!-- Set the background color -->
+
+    <stroke
+        android:color="#45314A"
+        android:width="2dp" /> <!-- Add stroke with color and width -->
+</shape>

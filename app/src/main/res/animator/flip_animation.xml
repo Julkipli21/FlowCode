@@ -1,0 +1,19 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rotate from 0 to -180 degrees (flipping) -->
+    <objectAnimator
+        android:propertyName="rotationY"
+        android:valueFrom="0"
+        android:valueTo="-180"
+        android:duration="300"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:repeatCount="0"/>
+
+    <!-- Move the button to the left -->
+    <objectAnimator
+        android:propertyName="translationX"
+        android:valueFrom="0"
+        android:valueTo="-80dp"
+        android:duration="300"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:repeatCount="0"/>
+</set>

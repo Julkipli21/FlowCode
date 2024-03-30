@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_spacing">35dp</dimen>
+    <dimen name="top_spacing">30dp</dimen>
+    <dimen name="button_text_size">30dp</dimen>
+    <dimen name="horizontal_spacing">65dp</dimen>
+    <dimen name="horizontal_spacing_no">90dp</dimen>
+    <dimen name="button_width">32dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    <dimen name="button_height">32dp</dimen>
+    /> <!-- Adjust the spacing as needed -->
+</resources>
